@@ -1,0 +1,6 @@
+framework module Pods_NestedJSONParsing_WithTableView_Cart {
+  umbrella header "Pods-NestedJSONParsing_WithTableView_Cart-umbrella.h"
+
+  export *
+  module * { export * }
+}
