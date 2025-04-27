@@ -89,7 +89,6 @@ class ViewController: UIViewController {
             DispatchQueue.main.sync {
                 self.cartTableView.reloadData()
             }
-            
         })
         
         dataTask?.resume()

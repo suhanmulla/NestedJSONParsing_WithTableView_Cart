@@ -21,7 +21,14 @@ class CartsTableViewCell: UITableViewCell {
     @IBOutlet weak var cartTotalQuantityLbl: UILabel!
     
     var cart1 : [Carts] = []
-    var product1 : [Products] = []
+    
+    var product1 : [Products] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.productCollectionView.reloadData()
+            }
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
